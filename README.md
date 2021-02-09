@@ -16,7 +16,7 @@
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
 - Open Command Line (cmd/Powershell/Linux console)
-- Go to the repository directory/SevOmatic.Terminal
+- Go to the "SevOmatic/SevOmatic.Terminal" folder
 - Type "dotnet run", this will start the application
 - It will open a browser window for Google (Copy the URL to the browser where your google account is logged in)
 - Choose the account of the user who's Spreadsheets account you want to use
