@@ -62,6 +62,5 @@ namespace SevOmatic.Core.Trades
                 return builder.ToString();
             }
         }
-
     }
 }

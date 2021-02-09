@@ -8,5 +8,6 @@ namespace SevOmatic.Core.Settings
     {
         //The ID of the Google spreadsheet to update
         public string SpreadsheetId { get; set; } = "";
+        public bool Showlog { get; set; } = true;
     }
 }

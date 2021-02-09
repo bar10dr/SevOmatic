@@ -14,6 +14,7 @@ namespace SevOmatic.Core.Google
     {
         SheetsService Service { get; set; }
         bool ShowErrors;
+        public bool Running = false;
         string range = "Sheet1!A:S";
         string ApplicationName = "SevOmatic";
         string googleCredentialPath = "credentials.json";
@@ -42,6 +43,8 @@ namespace SevOmatic.Core.Google
                         ApplicationName = ApplicationName,
                     });
                 }
+
+                Running = true;
             }
             catch (Exception Ex)
             {
