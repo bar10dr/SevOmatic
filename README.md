@@ -18,7 +18,7 @@
 - Open Command Line (cmd/Powershell/Linux console)
 - Go to the "SevOmatic/SevOmatic.Terminal/" folder
 - Type "dotnet run", this will start the application
-- It will open a browser window for Google (Copy the URL to the browser where your google account is logged in)
+- It will open a browser window for Google (Copy URL to another browser manufacturer if needed)
 - Choose the account of the user who's Spreadsheets account you want to use
 - Since the Application has not been verified by Google, press the "Advanced" link
 - Press the "Go to <whatever name you gave your application>" link
