@@ -48,7 +48,7 @@ namespace SevOmatic.Core
             }
             else
             {
-                Console.Write("Due to application settings, the specifics of the error was not shown. Start the application with -l to show error specifics.");
+                Console.Write("Due to application settings, the specifics of the error was not shown. Start the application with -e to show error specifics.");
             }
         }
     }

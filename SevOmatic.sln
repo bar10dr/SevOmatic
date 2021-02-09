@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30626.31
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevOmatic.Terminal", "SevOmatic\SevOmatic.Terminal.csproj", "{179C76BB-2838-41D1-8709-EBCB3A44DDEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevOmatic.Terminal", "SevOmatic.Terminal\SevOmatic.Terminal.csproj", "{179C76BB-2838-41D1-8709-EBCB3A44DDEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevOmatic.Core", "SevOmatic.Core\SevOmatic.Core.csproj", "{ADB0A966-2381-4384-94A7-EA98181AE71A}"
 EndProject
