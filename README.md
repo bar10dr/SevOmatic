@@ -5,7 +5,7 @@
 ##### 1. Download repository
 - Open Command Line (cmd/Powershell/Linux console)
 - Create a folder and enter it
-- Type "git clone https://github.com/bar10dr/SevOmatic.git" (https://gitforwindows.org/ for command-line git)
+- Type "git clone https://github.com/bar10dr/SevOmatic.git" (Git for windows: https://gitforwindows.org/)
 
 ##### 2. Creating the Google credentials
 - Go to https://developers.google.com/sheets/api/quickstart/dotnet
