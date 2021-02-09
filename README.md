@@ -12,11 +12,11 @@
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
 - Choose "Destop app" in the dropdown and press "Create"
-- Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal" folder
+- Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
 - Open Command Line (cmd/Powershell/Linux console)
-- Go to the "SevOmatic/SevOmatic.Terminal" folder
+- Go to the "SevOmatic/SevOmatic.Terminal/" folder
 - Type "dotnet run", this will start the application
 - It will open a browser window for Google (Copy the URL to the browser where your google account is logged in)
 - Choose the account of the user who's Spreadsheets account you want to use
