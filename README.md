@@ -12,7 +12,7 @@
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
 - Choose "Destop app" in the dropdown and press "Create"
-- Press the "Download client configuration" and save the "credentials.json" file to the application root folder
+- Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
 - Open Command Line (cmd/Powershell/Linux console)
