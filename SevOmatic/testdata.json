@@ -1,0 +1,16 @@
+﻿{
+  "trades": [
+    {
+      "symbol": "GME",
+      "buyPrice": 123.0
+    },
+    {
+      "symbol": "AMC",
+      "buyPrice": 456.0
+    },
+    {
+      "symbol": "NOK",
+      "buyPrice": 788.0
+    }
+  ]
+}
