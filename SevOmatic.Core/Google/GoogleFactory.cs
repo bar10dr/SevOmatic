@@ -13,7 +13,6 @@ namespace SevOmatic.Core.Google
     public class GoogleFactory
     {
         SheetsService Service { get; set; }
-        bool ShowErrors;
         public bool Running = false;
         string range = "Sheet1!A:S";
         string ApplicationName = "SevOmatic";
@@ -21,10 +20,8 @@ namespace SevOmatic.Core.Google
         string googleTokenPath = "token.json";
         string[] Scopes = { SheetsService.Scope.Spreadsheets };
 
-        public GoogleFactory(bool ShowErrors)
+        public GoogleFactory()
         {
-            this.ShowErrors = ShowErrors;
-
             Connect();
         }
 
@@ -48,7 +45,7 @@ namespace SevOmatic.Core.Google
             }
             catch (Exception Ex)
             {
-                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to log into Google.", ShowErrors);
+                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to log into Google.");
             }
         }
 
@@ -65,7 +62,7 @@ namespace SevOmatic.Core.Google
             }
             catch (Exception Ex)
             {
-                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to create a Google spreadsheet.", ShowErrors);
+                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to create a Google spreadsheet.");
             }
 
             return string.Empty;
@@ -109,7 +106,7 @@ namespace SevOmatic.Core.Google
             }
             catch (Exception Ex)
             {
-                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to write Google Spreadsheet data", ShowErrors);
+                ConsoleOutputHandler.WriteError(Ex, "An error occured while attempting to write Google Spreadsheet data");
             }
         }
     }

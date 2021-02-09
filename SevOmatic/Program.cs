@@ -25,7 +25,7 @@ namespace SevOmatic.Terminal
         {
             Init(Options);
 
-            googleFactory = new GoogleFactory(Options.ShowError);
+            googleFactory = new GoogleFactory();
 
             if (googleFactory.Running == true)
             {
@@ -86,6 +86,8 @@ namespace SevOmatic.Terminal
         static void Init(StartupOptions Options)
         {
             SettingsFactory.Settings.Showlog = Options.ShowLog;
+            SettingsFactory.Settings.ShowError = Options.ShowError;
+
             ConsoleOutputHandler.WriteLineMessage("SevOmatic v1.0.0", false);
         }
 

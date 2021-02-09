@@ -37,14 +37,18 @@ namespace SevOmatic.Core
             }
         }
 
-        public static void WriteError(Exception Ex, string Message, bool ShowErrors = false)
+        public static void WriteError(Exception Ex, string Message)
         {
-            Console.WriteLine(Message);
+            Console.WriteLine($"[ERROR] {Message}");
 
-            if (ShowErrors == true)
+            if (SettingsFactory.Settings.ShowError == true)
             {
                 Console.WriteLine(Ex.Message);
                 Console.WriteLine(Ex.StackTrace);
+            }
+            else
+            {
+                Console.Write("Due to application settings, the specifics of the error was not shown. Start the application with -l to show error specifics.");
             }
         }
     }
