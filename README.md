@@ -68,7 +68,7 @@ Ex: dotnet run -- -e false -r single -f 30 -x 3
 
 > -f [Update frequency]
 >
-> If in continous mode, will set the number of seconds between each attempt to read the market json file. Default is 60.
+> If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
 > 
 > Ex: dotnet run -- -f 30
 
