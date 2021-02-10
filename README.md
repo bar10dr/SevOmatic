@@ -57,15 +57,6 @@ This way you can customize the top of a spreadsheet manually. Default is 1.
 _`Ex: dotnet run -- -x 3`_
 
 
-#### Update frequency
-
-If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
-
--f [Update frequency]
-
-_`Ex: dotnet run -- -f 30`_
-
-
 #### Run mode
 
 Dictates if the application should run just once or keep running.
@@ -79,6 +70,15 @@ Continous = Will keep running until manually stopped. Continous is on by default
 -r [single/continous]
 
 _`Ex: dotnet run -- -r single`_
+
+
+#### Update frequency
+
+If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
+
+-f [Update frequency]
+
+_`Ex: dotnet run -- -f 30`_
 
 
 #### _Show detailed error information_
