@@ -86,7 +86,9 @@ _`Ex: dotnet run -- -f 30`_
 
 #### Specify what row in the spreadsheet to start inserting information
 
-The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
+The first row of the worksheet to start inserting information on.
+
+This way you can customize the top of a spreadsheet manually. Default is 1.
 
 -x [Row number]
 
