@@ -3,10 +3,10 @@
 ## Setup instructions
 Tools needed
 - .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
-- A git client (Git for windows: https://gitforwindows.org/)
+- A git client (Windows: https://gitforwindows.org/)
 
 ##### 1. Download repository
-- Open Command Line (cmd/Powershell/Linux console)
+- Open a terminal (Cmd/Powershell/Bash)
 - Create a folder and enter it
 - Type "git clone https://github.com/bar10dr/SevOmatic.git" or use another git client to download the source from github
 
