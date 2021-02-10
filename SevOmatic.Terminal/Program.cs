@@ -87,6 +87,7 @@ namespace SevOmatic.Terminal
         {
             SettingsFactory.Settings.Showlog = Options.ShowLog;
             SettingsFactory.Settings.ShowError = Options.ShowError;
+            SettingsFactory.Settings.SpreadsheetStartRow = Options.SpreadsheetStartRow;
 
             ConsoleOutputHandler.WriteLineMessage("SevOmatic v1.0.0", false);
         }

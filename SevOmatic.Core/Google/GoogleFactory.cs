@@ -7,6 +7,7 @@ using Google.Apis.Util.Store;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Sheets.v4.Data;
 using System.Collections.Generic;
+using SevOmatic.Core.Settings;
 
 namespace SevOmatic.Core.Google
 {
@@ -14,7 +15,7 @@ namespace SevOmatic.Core.Google
     {
         SheetsService Service { get; set; }
         public bool Running = false;
-        string range = "Sheet1!A:S";
+        string range = $"Sheet1!A{ SettingsFactory.Settings.SpreadsheetStartRow }:S";
         string ApplicationName = "SevOmatic";
         string googleCredentialPath = "credentials.json";
         string googleTokenPath = "token.json";

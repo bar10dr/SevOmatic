@@ -10,5 +10,6 @@ namespace SevOmatic.Core.Settings
         public string SpreadsheetId { get; set; } = "";
         public bool Showlog { get; set; } = true;
         public bool ShowError { get; set; } = false;
+        public int SpreadsheetStartRow { get; set; } = 1;
     }
 }

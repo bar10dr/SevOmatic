@@ -16,9 +16,12 @@ namespace SevOmatic.Terminal
         public RunMode Mode { get; set; } = RunMode.Continous;
 
         [Option('f', "updatefrequency", Required = false, HelpText = "Update frequency in seconds if in continous mode.")]
-        public int UpdateFrequency { get; set; } = 5;
+        public int UpdateFrequency { get; set; } = 60;
 
         [Option('n', "spreadsheetname", Required = false, HelpText = "Specify first time running to specify the name of the spreadsheet. Delete settings.json to start fresh.")]
         public string SpreadsheetName { get; set; } = "SevOmatic";
+
+        [Option('x', "spreadsheetstartrow", Required = false, HelpText = "The first row of the worksheet to start inserting information on.")]
+        public int SpreadsheetStartRow { get; set; } = 1;
     }
 }
