@@ -1,5 +1,10 @@
 # SevOmatic
 
+This application aims to take the contents of a json file and insert it into a Google spreadsheet.
+
+In order to obtain access to a users Google spreadsheet; specific access has to be obtained by Google both for running the application and for allowing the application to modify a spreadsheet on behalf of a user.
+
+
 ## Setup instructions
 Tools needed
 - .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
@@ -32,6 +37,7 @@ This step will grant the application you just created the rights to modify your 
 
 ##### 4. Setup finished
 The application should now create a new spreadsheet, and continually update it.
+
 
 ## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
