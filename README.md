@@ -46,21 +46,25 @@ _`Ex: dotnet run -- -e false -r single -f 30 -x 3`_
 
 ---
 
-#### _Show detailed error information_
+#### Specify what row in the spreadsheet to start inserting information
 
-Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
+The first row of the worksheet to start inserting information on.
 
--e [false/true]
+This way you can customize the top of a spreadsheet manually. Default is 1.
 
-_`Ex: dotnet run -- -e true`_
+-x [Row number]
 
-#### Show log in console window
+_`Ex: dotnet run -- -x 3`_
 
-Shows log in the console window, turning this off will stop any text being output to the console. Enabled by default.
 
--l [false/true]
+#### Update frequency
 
-_`Ex: dotnet run -- -l false`_
+If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
+
+-f [Update frequency]
+
+_`Ex: dotnet run -- -f 30`_
+
 
 #### Run mode
 
@@ -76,20 +80,22 @@ Continous = Will keep running until manually stopped. Continous is on by default
 
 _`Ex: dotnet run -- -r single`_
 
-#### Update frequency
 
-If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
+#### _Show detailed error information_
 
--f [Update frequency]
+Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
 
-_`Ex: dotnet run -- -f 30`_
+-e [false/true]
 
-#### Specify what row in the spreadsheet to start inserting information
+_`Ex: dotnet run -- -e true`_
 
-The first row of the worksheet to start inserting information on.
 
-This way you can customize the top of a spreadsheet manually. Default is 1.
+#### Show log in console window
 
--x [Row number]
+Shows log in the console window, turning this off will stop any text being output to the console. Enabled by default.
 
-_`Ex: dotnet run -- -x 3`_
+-l [false/true]
+
+_`Ex: dotnet run -- -l false`_
+
+
