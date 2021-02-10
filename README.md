@@ -8,7 +8,7 @@ For now, a test json file is used to update the spreadsheet (/SevOmatic.Terminal
 
 Until I receive the proper format to be used, the test file format can't be changed. You can however modify/add/remove items in the testdata.json test file as long as the format stays the same.
 
-## Setup instructions
+## First Run Setup instructions
 Tools needed
 - .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
 - A git client (Windows: https://gitforwindows.org/)
