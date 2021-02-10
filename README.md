@@ -43,9 +43,9 @@ The application should now create a new spreadsheet, and continually update it.
 
 Going to the "SevOmatic/SevOmatic.Terminal/" folder and typing "dotnet run" will now start the application without any other input required from here on out.
 
-The Google Application and User credentials are saved to file in the local project, and can be copied if you ever need to move the application to another machine.
+The Google Application and User credentials are saved to file in the local project folder and can be copied if you ever need to move the application to another machine.
 
-If the github source code is updated, just go to the "/SevOmatic/" folder and type "git pull" and it will update the files automatically (If using the CLI GIT specified above).
+When the github source code is updated, just go to the "/SevOmatic/" folder and type "git pull" and it will update the local files automatically with the new changes (If using the CLI GIT specified above).
 
 ## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
