@@ -29,7 +29,7 @@ This step will grant the application you just created the rights to modify your 
 - Open Command Line (cmd/Powershell/Linux console)
 - Go to the "SevOmatic/SevOmatic.Terminal/" folder
 - Type "dotnet run", this will start the application
-- It will open a browser window to Google (Copy URL to another browser manufacturer if needed)
+- It will open a browser window to Googles authentication page
 - Choose the account of the user who's Spreadsheets account you want to use
 - Since the Application has not been verified by Google, press the "Advanced" link
 - Press the "Go to <whatever name you gave your application>" link
