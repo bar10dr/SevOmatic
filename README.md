@@ -4,7 +4,7 @@ This application aims to take the contents of a json file and insert it into a G
 
 In order to obtain access to a users Google spreadsheet; specific access has to be obtained by Google both for running the application and for allowing the application to modify a spreadsheet on behalf of a user.
 
-For now, a test json file is used to update data in the spreadsheet (\SevOmatic.Terminal\testdata.json).
+For now, a test json file is used to update the spreadsheet (\SevOmatic.Terminal\testdata.json).
 
 ## Setup instructions
 Tools needed
