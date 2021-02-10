@@ -16,7 +16,7 @@ Tools needed
 - Create a folder and enter it
 - Type "git clone https://github.com/bar10dr/SevOmatic.git" or use another git client to download the source from github
 
-##### 2. Creating the Google credentials
+##### 2. Creating the Google application credentials
 This step will register an application at Google and give you a json file containing the credentials for your registered application.
 - Go to https://developers.google.com/sheets/api/quickstart/dotnet
 - Press the blue button named "Enable the Google Sheets API"
