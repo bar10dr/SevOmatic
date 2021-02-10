@@ -54,6 +54,8 @@ The application refers to the spreadsheet ID, so you are free to change the spre
 
 The application will run fine without any command line arguments, but some are implemented for convenience.
 
+## Command Line Arguments
+
 To use arguments with the "dotnet run" command, you have to add two -- after the command before initiating arguments.
 
 _`Ex: dotnet run -- -e false -r single -f 30 -x 3`_
