@@ -48,7 +48,7 @@ The Google Application and User credentials are saved to file in the local proje
 When the github source code is updated, just go to the root "\SevOmatic\" folder and type "git pull" and it will update the local files automatically with the new changes (If using the CLI GIT specified above).
 
 ## Usage instructions
-The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
+The application will only modify the first worksheet of a spreadsheet, so additional worksheets may be modified at will.
 
 The application refers to the spreadsheet ID, so you are free to change the spreadsheet name or location at will.
 
