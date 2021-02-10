@@ -8,7 +8,7 @@
 - Type "git clone https://github.com/bar10dr/SevOmatic.git" (Git for windows: https://gitforwindows.org/) or just download the source from github
 
 ##### 2. Creating the Google credentials
-This step will register an application at Google and give you a file with the credentials for that application.
+This step will register an application at Google and give you a json file containing the credentials for your registered application.
 - Go to https://developers.google.com/sheets/api/quickstart/dotnet
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
@@ -16,7 +16,7 @@ This step will register an application at Google and give you a file with the cr
 - Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
-This step will grant the application you just created rights to modify your Spreadsheet data
+This step will grant the application you just created rights to modify your Spreadsheet data.
 - Open Command Line (cmd/Powershell/Linux console)
 - Go to the "SevOmatic/SevOmatic.Terminal/" folder
 - Type "dotnet run", this will start the application
