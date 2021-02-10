@@ -16,7 +16,9 @@ namespace SevOmatic.Terminal
 
         static void Main(string[] args)
         {
-            Parser.Default.ParseArguments<StartupOptions>(args)
+            var parser = new Parser(cfg => cfg.CaseInsensitiveEnumValues = true);
+
+            parser.ParseArguments<StartupOptions>(args)
                 .WithParsed(Run)
                 .WithNotParsed(HandleParseError);
         }
