@@ -52,7 +52,7 @@ Ex: dotnet run -- -e false -r single -f 30 -x 3
 
 Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
 
-Ex: dotnet run -- -e true
+_`Ex: dotnet run -- -e true`_
 
 #### Show log in console window
 
@@ -60,7 +60,7 @@ Ex: dotnet run -- -e true
  
 Shows log in the console window, turning this off will stop any text being output to the console. Enabled by default.
  
-`Ex: dotnet run -- -l false`
+_`Ex: dotnet run -- -l false`_
 
 #### Run mode
 
@@ -72,7 +72,7 @@ Single = will run once and quit.
 
 Continous = Will keep running until manually stopped. Continous is on by default.
  
-`Ex: dotnet run -- -r single`
+_`Ex: dotnet run -- -r single`_
 
 #### Update frequency
 
@@ -80,7 +80,7 @@ Continous = Will keep running until manually stopped. Continous is on by default
 
 If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
 
-`Ex: dotnet run -- -f 30`
+_`Ex: dotnet run -- -f 30`_
 
 #### Specify what row in the spreadsheet to start inserting information
 
@@ -88,4 +88,4 @@ If in continous mode, will set the number of seconds between each attempt to upd
 
 The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
  
-`Ex: dotnet run -- -x 3`
+_`Ex: dotnet run -- -x 3`_
