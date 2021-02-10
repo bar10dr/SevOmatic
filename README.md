@@ -34,13 +34,43 @@ This step will grant the application you just created the rights to modify your 
 The application should now create a new spreadsheet, and continually update it.
 
 ## Usage instructions
-The application will run without any arguments, but some are implemented for convenience.
-
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
 
-* -e [false/true] : Shows full error in console. Disabled by default as it might show Google specific information.
-* -l [false/true] : Shows log in the console window. Enabled by default.
-* -r [single/continous] : Single = will run once and quit. Continous = Will keep running until manually stopped. Continous is on by default.
-* -f [Update frequency] : If in continous mode, will set the number of seconds between each attempt to read the market json file. Default is 60.
-* -n [Spreadsheet name] : When the application is started the first time, it will create a spreadsheet with the given name. The name can be altered later manually in Google Spreadsheets. Default is SevOmatic.
-* -x [Row number] : The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
+The application refers to the spreadsheet ID, so you are free to change its name or location at will.
+
+The application will run fine without any command line arguments, but some are implemented for convenience.
+
+To use arguments with the "dotnet run" command, you have to add two -- after the command before initiating arguments.
+
+Ex: dotnet run -- -e false -r single -f 30 -x 3
+
+> -e [false/true]
+>
+> Shows full error in console. Disabled by default as it might show Google specific information.
+> 
+> Ex: dotnet run -- -e true
+
+> -l [false/true]
+> 
+> Shows log in the console window. Enabled by default.
+> 
+> Ex: dotnet run -- -l false
+
+> -r [single/continous]
+>
+> Single = will run once and quit.
+> Continous = Will keep running until manually stopped. Continous is on by default.
+> 
+> Ex: dotnet run -- -r single
+
+> -f [Update frequency]
+>
+> If in continous mode, will set the number of seconds between each attempt to read the market json file. Default is 60.
+> 
+> Ex: dotnet run -- -f 30
+
+> -x [Row number]
+>
+> The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
+> 
+> Ex: dotnet run -- -x 3
