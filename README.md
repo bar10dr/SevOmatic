@@ -64,7 +64,9 @@ _`Ex: dotnet run -- -l false`_
 
 #### Run mode
 
-Dictates if the application should run just once or keep running. This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
+Dictates if the application should run just once or keep running.
+
+This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
 
 Single = will run once and quit.
 
