@@ -44,18 +44,24 @@ To use arguments with the "dotnet run" command, you have to add two -- after the
 
 Ex: dotnet run -- -e false -r single -f 30 -x 3
 
+> Show detailed error information
+>
 > -e [false/true]
 >
-> Shows full error in console. Disabled by default as it might show Google specific information.
+> Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
 > 
 > Ex: dotnet run -- -e true
 
+> Show log in console window
+>
 > -l [false/true]
 > 
-> Shows log in the console window. Enabled by default.
+> Shows log in the console window, turning this off will stop any text being output to the console. Enabled by default.
 > 
 > Ex: dotnet run -- -l false
 
+> Run mode
+>
 > -r [single/continous]
 >
 > Dictates if the application should run just once or keep running. This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
@@ -66,12 +72,16 @@ Ex: dotnet run -- -e false -r single -f 30 -x 3
 > 
 > Ex: dotnet run -- -r single
 
+> Update frequency
+>
 > -f [Update frequency]
 >
 > If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
 > 
 > Ex: dotnet run -- -f 30
 
+> Specify what row in the spreadsheet to start inserting information
+>
 > -x [Row number]
 >
 > The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
