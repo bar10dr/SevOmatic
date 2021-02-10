@@ -20,7 +20,7 @@ This step will register an application at Google and give you a json file contai
 - Go to https://developers.google.com/sheets/api/quickstart/dotnet
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
-- Choose "Destop app" in the dropdown and press "Create"
+- Choose "Desktop app" in the dropdown and press "Create"
 - Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
