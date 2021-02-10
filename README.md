@@ -8,7 +8,7 @@ For now, a test json file is used to update the spreadsheet (\SevOmatic\SevOmati
 
 Until I receive the proper format to be used, the test file format can't be changed. You can however modify/add/remove items in the testdata.json test file as long as the format stays the same.
 
-## First Run Setup instructions
+## First Run Setup Instructions
 Tools needed
 - .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
 - A git client (Windows: https://gitforwindows.org/)
@@ -47,7 +47,7 @@ The Google Application and User credentials are saved to file in the local proje
 
 When the github source code is updated, just go to the root "\SevOmatic\" folder and type "git pull" and it will update the local files automatically with the new changes (If using the CLI GIT specified above).
 
-## Usage instructions
+## Usage Instructions
 The application will only modify the first worksheet of a spreadsheet, so additional worksheets may be modified at will.
 
 The application refers to the spreadsheet ID, so you are free to change the spreadsheet name or location at will.
