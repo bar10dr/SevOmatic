@@ -1,5 +1,10 @@
 # SevOmatic
 
+This application aims to take the contents of a json file and insert it into a Google spreadsheet.
+
+In order to obtain access to a users Google spreadsheet; specific access has to be obtained by Google both for running the application and for allowing the application to modify a spreadsheet on behalf of a user.
+
+
 ## Setup instructions
 Tools needed
 - .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
@@ -15,7 +20,7 @@ This step will register an application at Google and give you a json file contai
 - Go to https://developers.google.com/sheets/api/quickstart/dotnet
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
-- Choose "Destop app" in the dropdown and press "Create"
+- Choose "Desktop app" in the dropdown and press "Create"
 - Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
@@ -33,14 +38,70 @@ This step will grant the application you just created the rights to modify your 
 ##### 4. Setup finished
 The application should now create a new spreadsheet, and continually update it.
 
-## Usage instructions
-The application will run without any arguments, but some are implemented for convenience.
 
+## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
 
-* -e [false/true] : Shows full error in console. Disabled by default as it might show Google specific information.
-* -l [false/true] : Shows log in the console window. Enabled by default.
-* -r [single/continous] : Single = will run once and quit. Continous = Will keep running until manually stopped. Continous is on by default.
-* -f [Update frequency] : If in continous mode, will set the number of seconds between each attempt to read the market json file. Default is 60.
-* -n [Spreadsheet name] : When the application is started the first time, it will create a spreadsheet with the given name. The name can be altered later manually in Google Spreadsheets. Default is SevOmatic.
-* -x [Row number] : The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
+The application refers to the spreadsheet ID, so you are free to change the spreadsheet name or location at will.
+
+The application will run fine without any command line arguments, but some are implemented for convenience.
+
+To use arguments with the "dotnet run" command, you have to add two -- after the command before initiating arguments.
+
+_`Ex: dotnet run -- -e false -r single -f 30 -x 3`_
+
+---
+
+#### Specify what row in the spreadsheet to start inserting information
+
+The first row of the worksheet to start inserting information on.
+
+This way you can customize the top of a spreadsheet manually. Default is 1.
+
+-x [Row number]
+
+_`Ex: dotnet run -- -x 3`_
+
+
+#### Run mode
+
+Dictates if the application should run just once or keep running.
+
+This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
+
+Single = will run once and quit.
+
+Continous = Will keep running until manually stopped. Continous is on by default.
+
+-r [single/continous]
+
+_`Ex: dotnet run -- -r single`_
+
+
+#### Update frequency
+
+If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
+
+-f [Update frequency]
+
+_`Ex: dotnet run -- -f 30`_
+
+
+#### _Show detailed error information_
+
+Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
+
+-e [false/true]
+
+_`Ex: dotnet run -- -e true`_
+
+
+#### Show log in console window
+
+Shows log in the console window, turning this off will stop any text being output to the console. Enabled by default.
+
+-l [false/true]
+
+_`Ex: dotnet run -- -l false`_
+
+
