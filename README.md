@@ -58,7 +58,10 @@ Ex: dotnet run -- -e false -r single -f 30 -x 3
 
 > -r [single/continous]
 >
+> Dictates if the application should run just once or keep running. This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
+>
 > Single = will run once and quit.
+>
 > Continous = Will keep running until manually stopped. Continous is on by default.
 > 
 > Ex: dotnet run -- -r single
