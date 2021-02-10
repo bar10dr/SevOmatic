@@ -42,7 +42,7 @@ The application will run fine without any command line arguments, but some are i
 
 To use arguments with the "dotnet run" command, you have to add two -- after the command before initiating arguments.
 
-Ex: dotnet run -- -e false -r single -f 30 -x 3
+_`Ex: dotnet run -- -e false -r single -f 30 -x 3`_
 
 ---
 
