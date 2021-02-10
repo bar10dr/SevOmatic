@@ -36,7 +36,7 @@ The application should now create a new spreadsheet, and continually update it.
 ## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
 
-The application refers to the spreadsheet ID, so you are free to change its name or location at will.
+The application refers to the spreadsheet ID, so you are free to change the spreadsheet name or location at will.
 
 The application will run fine without any command line arguments, but some are implemented for convenience.
 
