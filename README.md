@@ -44,15 +44,15 @@ To use arguments with the "dotnet run" command, you have to add two -- after the
 
 Ex: dotnet run -- -e false -r single -f 30 -x 3
 
-### Show detailed error information
+##### Show detailed error information
 
- -e [false/true]
+-e [false/true]
 
- Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
+Shows the full error in the console should the application crash. Disabled by default as it might show personal Google information.
  
- Ex: dotnet run -- -e true
+Ex: dotnet run -- -e true
 
-### Show log in console window
+##### Show log in console window
 
 -l [false/true]
  
@@ -60,30 +60,30 @@ Shows log in the console window, turning this off will stop any text being outpu
  
 Ex: dotnet run -- -l false
 
-> Run mode
->
-> -r [single/continous]
->
-> Dictates if the application should run just once or keep running. This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
->
-> Single = will run once and quit.
->
-> Continous = Will keep running until manually stopped. Continous is on by default.
-> 
-> Ex: dotnet run -- -r single
+##### Run mode
 
-> Update frequency
->
-> -f [Update frequency]
->
-> If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
-> 
-> Ex: dotnet run -- -f 30
+-r [single/continous]
 
-> Specify what row in the spreadsheet to start inserting information
->
-> -x [Row number]
->
-> The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
-> 
-> Ex: dotnet run -- -x 3
+Dictates if the application should run just once or keep running. This way you can elect to use Windows Task Scheduler or Linux crontab instead of having the application running constantly.
+
+Single = will run once and quit.
+
+Continous = Will keep running until manually stopped. Continous is on by default.
+ 
+Ex: dotnet run -- -r single
+
+##### Update frequency
+
+-f [Update frequency]
+
+If in continous mode, will set the number of seconds between each attempt to update the spreadsheet. Default is 60.
+
+Ex: dotnet run -- -f 30
+
+##### Specify what row in the spreadsheet to start inserting information
+
+-x [Row number]
+
+The first row of the worksheet to start inserting information on. This way you can customize the top of a spreadsheet manually. Default is 1.
+ 
+Ex: dotnet run -- -x 3
