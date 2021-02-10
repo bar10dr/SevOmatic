@@ -41,6 +41,9 @@ This step will grant the application you just created the rights to modify your 
 ##### 4. Setup finished
 The application should now create a new spreadsheet, and continually update it.
 
+Going to the "SevOmatic/SevOmatic.Terminal/" folder and typing "dotnet run" will now start the application without any other input required.
+
+If the source code is updated, just go to the "SevOmatic" folder and type "git pull" and it will update the files automatically (If using the CLI GIT specified above).
 
 ## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
