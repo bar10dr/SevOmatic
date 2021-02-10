@@ -1,11 +1,14 @@
 # SevOmatic
 
 ## Setup instructions
+Tools needed
+- .net core 5 SDK https://dotnet.microsoft.com/download/dotnet/5.0
+- A git client (Git for windows: https://gitforwindows.org/)
 
 ##### 1. Download repository
 - Open Command Line (cmd/Powershell/Linux console)
 - Create a folder and enter it
-- Type "git clone https://github.com/bar10dr/SevOmatic.git" (Git for windows: https://gitforwindows.org/) or just download the source from github
+- Type "git clone https://github.com/bar10dr/SevOmatic.git" or use another git client to download the source from github
 
 ##### 2. Creating the Google credentials
 This step will register an application at Google and give you a json file containing the credentials for your registered application.
