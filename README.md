@@ -16,7 +16,7 @@ This step will register an application at Google and give you a json file contai
 - Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
-This step will grant the application you just created rights to modify your Spreadsheet data.
+This step will grant the application you just created the rights to modify your Google user's Spreadsheet data.
 - Open Command Line (cmd/Powershell/Linux console)
 - Go to the "SevOmatic/SevOmatic.Terminal/" folder
 - Type "dotnet run", this will start the application
