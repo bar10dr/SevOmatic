@@ -4,7 +4,7 @@ This application aims to take the contents of a json file and insert it into a G
 
 In order to obtain access to a users Google spreadsheet; specific access has to be obtained by Google both for running the application and for allowing the application to modify a spreadsheet on behalf of a user.
 
-For now, a test json file is used to update the spreadsheet (/SevOmatic/SevOmatic.Terminal/testdata.json).
+For now, a test json file is used to update the spreadsheet (\SevOmatic\SevOmatic.Terminal\testdata.json).
 
 Until I receive the proper format to be used, the test file format can't be changed. You can however modify/add/remove items in the testdata.json test file as long as the format stays the same.
 
@@ -24,12 +24,12 @@ This step will register an application at Google and give you a json file contai
 - Press the blue button named "Enable the Google Sheets API"
 - Enter a name for the application and press next
 - Choose "Desktop app" in the dropdown and press "Create"
-- Press the "Download client configuration" and save the "credentials.json" file to the "SevOmatic/SevOmatic.Terminal/" folder
+- Press the "Download client configuration" and save the "credentials.json" file to the "\SevOmatic\SevOmatic.Terminal\" folder
 
 ##### 3. Giving the application rights to modify your Google Spreadsheets
 This step will grant the application you just created the rights to modify your Google user's spreadsheet data.
 - Open Command Line (cmd/Powershell/Linux console)
-- Go to the "SevOmatic/SevOmatic.Terminal/" folder
+- Go to the "\SevOmatic\SevOmatic.Terminal\" folder
 - Type "dotnet run", this will start the application
 - It will open a browser window to Googles authentication page
 - Choose the account of the user who's Spreadsheets account you want to use
@@ -41,11 +41,11 @@ This step will grant the application you just created the rights to modify your 
 ##### 4. Setup finished
 The application should now create a new spreadsheet, and continually update it.
 
-Going to the "SevOmatic/SevOmatic.Terminal/" folder and typing "dotnet run" will now start the application without any other input required from here on out.
+Going to the "\SevOmatic\SevOmatic.Terminal\" folder and typing "dotnet run" will now start the application without any other input required from here on out.
 
 The Google Application and User credentials are saved to file in the local project folder and can be copied if you ever need to move the application to another machine.
 
-When the github source code is updated, just go to the "/SevOmatic/" folder and type "git pull" and it will update the local files automatically with the new changes (If using the CLI GIT specified above).
+When the github source code is updated, just go to the root "\SevOmatic\" folder and type "git pull" and it will update the local files automatically with the new changes (If using the CLI GIT specified above).
 
 ## Usage instructions
 The application will only modify the first worksheet of a spreadsheet, so additional spreadsheets may be modified at will.
